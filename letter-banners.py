@@ -1,6 +1,6 @@
 #tyler palmer 2026
 #program to print custom letter banners
-#version 1.7
+#version 1.8
 import pyperclip
 #used to copy the output to the clipboard. 
 
@@ -20,7 +20,7 @@ def genban(bkg_color,bkg_color_int,ltr_color,ltr_color_int,char,iterator):
     bkg_color_int = str(bkg_color_int)
     ltr_color_int = str(ltr_color_int)
     iterator = str(iterator)
-    if char != 'h' and char != 'q' and char != 's' and char != 'b' and char != 'd':
+    if char != 'h' and char != 'q' and char != 's' and char != 'd':
         output1 = "{Slot:" + iterator + ",id:\"minecraft:" + bkg_color + "_banner\",Count:1b,tag:"
     else:
         output1 = "{Slot:" + iterator + ",id:\"minecraft:" + ltr_color + "_banner\",Count:1b,tag:"
