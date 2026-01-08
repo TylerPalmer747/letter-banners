@@ -20,7 +20,7 @@ def genban(bkg_color,bkg_color_int,ltr_color,ltr_color_int,char,iterator):
     bkg_color_int = str(bkg_color_int)
     ltr_color_int = str(ltr_color_int)
     iterator = str(iterator)
-    if char != 'h' and char != 'q' and char != 's' and char != 'b':
+    if char != 'h' and char != 'q' and char != 's' and char != 'b' and char != 'd':
         output1 = "{Slot:" + iterator + ",id:\"minecraft:" + bkg_color + "_banner\",Count:1b,tag:"
     else:
         output1 = "{Slot:" + iterator + ",id:\"minecraft:" + ltr_color + "_banner\",Count:1b,tag:"
@@ -34,7 +34,7 @@ def genban(bkg_color,bkg_color_int,ltr_color,ltr_color_int,char,iterator):
     if char == 'c':
         output2 = "{BlockEntityTag:{Patterns:[{Pattern:\"ts\",Color:" + ltr_color_int + "},{Pattern:\"bs\",Color:" + ltr_color_int + "},{Pattern:\"rs\",Color:" + ltr_color_int + "},{Pattern:\"ms\",Color:" + bkg_color_int + "},{Pattern:\"ls\",Color:" + ltr_color_int + "},{Pattern:\"bo\",Color:" + bkg_color_int + "}]}}}"
     if char == 'd':
-        output2 = "{BlockEntityTag:{Patterns:[{Pattern:\"rs\",Color:" + ltr_color_int + "},{Pattern:\"bs\",Color:" + ltr_color_int + "},{Pattern:\"ts\",Color:" + ltr_color_int + "},{Pattern:\"cbo\",Color:" + bkg_color_int + "},{Pattern:\"ls\",Color:" + ltr_color_int + "},{Pattern:\"bo\",Color:" + bkg_color_int + "}]}}}"
+        output2 = "{BlockEntityTag:{Patterns:[{Pattern:\"bts\",Color:" + bkg_color_int + "},{Pattern:\"tts\",Color:" + bkg_color_int + "},{Pattern:\"cs\",Color:" + ltr_color_int + "},{Pattern:\"mc\",Color:" + bkg_color_int + "},{Pattern:\"ls\",Color:" + ltr_color_int + "},{Pattern:\"bo\",Color:" + bkg_color_int + "}]}}}"
     if char == 'e':
         output2 = "{BlockEntityTag:{Patterns:[{Pattern:\"ls\",Color:" + ltr_color_int + "},{Pattern:\"ts\",Color:" + ltr_color_int + "},{Pattern:\"ms\",Color:" + ltr_color_int + "},{Pattern:\"bs\",Color:" + ltr_color_int + "},{Pattern:\"bo\",Color:" + bkg_color_int + "}]}}}"
     if char == 'f':
