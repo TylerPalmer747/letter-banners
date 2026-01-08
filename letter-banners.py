@@ -1,6 +1,6 @@
 #tyler palmer 2026
 #program to print custom letter banners
-#version 1.6
+#version 1.7
 import pyperclip
 #used to copy the output to the clipboard. 
 
